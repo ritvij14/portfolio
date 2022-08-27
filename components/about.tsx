@@ -1,112 +1,70 @@
 import React from "react";
-import { Box, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import {
-  FaFileAlt,
-  FaGithub,
-  FaGithubSquare,
-  FaLinkedin,
-  FaTwitter,
-} from "react-icons/fa";
+import { Box, Flex, Image, Text, useColorMode } from "@chakra-ui/react";
 
-import { IoMailSharp } from "react-icons/io5";
 import ChakraBox from "./animate_box";
+import "@fontsource/jost/600.css";
+import "@fontsource/jost/700.css";
 
 const About = () => {
+  const { colorMode } = useColorMode();
+
   return (
-    <ChakraBox
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      // @ts-ignore no problem in operation, although type error appears.
-      transition={{
-        duration: 0.3,
-        delay: 1,
-        ease: "easeIn",
-      }}
-      mx="15rem"
+    <Box
+      mx="12rem"
       mb="5rem"
+      color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
     >
-      <Text mt="auto" fontFamily="poppins" fontSize="5xl" fontWeight="600">
-        About Me
-      </Text>
       <Flex>
-        <Text
-          fontFamily="poppins"
-          fontSize="xl"
-          w="60%"
-          fontWeight="400"
-          mt="2rem"
+        <ChakraBox
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          // @ts-ignore no problem in operation, although type error appears.
+          transition={{
+            delay: 0.2,
+            duration: 0.2,
+            ease: "easeIn",
+          }}
+          w="53%"
         >
-          Hello! I am Ritvij Kumar Sharma. I am an engineering student from
-          India and I love building digital products. My interest in coding
-          started from my school days when we used to write programs in Java.{" "}
-          <br />
-          <br /> Fast-forward to today, and I’ve worked on a wide variety of
-          projects, like mobile apps for an NGO and research purposes, projects
-          in multiple startups and applications for students of my own college.
-        </Text>
-        <Image
-          src="/images/intro-pic.png"
-          alt="ritvij_memoji"
-          h="20rem"
-          w="20rem"
-          ml="5rem"
-        />
+          <Text mt="auto" fontFamily="jost" fontSize="4xl" fontWeight="700">
+            About Myself
+          </Text>
+
+          <Text fontFamily="jost" fontSize="xl" fontWeight="600" mt="2rem">
+            Hello! My name is Ritvij. I am an engineering student from India and
+            I love building digital products. My interest in coding started from
+            my school days when we used to write programs in Java. <br />
+            <br /> Fast-forward to today, and I’ve worked on a wide variety of
+            projects, like mobile apps for an NGO and research purposes,
+            projects in multiple startups and applications for students of my
+            own college.
+          </Text>
+        </ChakraBox>
+        <ChakraBox
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          // @ts-ignore no problem in operation, although type error appears.
+          transition={{
+            delay: 0.4,
+            duration: 0.2,
+            ease: "easeIn",
+          }}
+          alignSelf="center"
+        >
+          <Image
+            src={
+              colorMode == "dark"
+                ? "/images/about_vector_dark.svg"
+                : "/images/about_vector.svg"
+            }
+            alt="ritvij_memoji"
+            ml="1rem"
+          />
+        </ChakraBox>
       </Flex>
-      <SimpleGrid
-        mt="2rem"
-        mx="10rem"
-        spacingX="1rem"
-        textAlign="center"
-        columns={5}
-        fontFamily="poppins"
-      >
-        <Flex
-          bg="gray.600"
-          p="0.6rem"
-          borderRadius="5rem"
-          justifyContent="space-around"
-        >
-          <FaFileAlt size="1.5rem" />
-          Resume
-        </Flex>
-        <Flex
-          bg="red.600"
-          p="0.6rem"
-          borderRadius="5rem"
-          justifyContent="space-around"
-        >
-          <IoMailSharp size="1.5rem" />
-          E-Mail
-        </Flex>
-        <Flex
-          bg="blue.700"
-          p="0.6rem"
-          borderRadius="5rem"
-          justifyContent="space-around"
-        >
-          <FaLinkedin size="1.5rem" />
-          LikedIn
-        </Flex>
-        <Flex
-          bg="black"
-          p="0.6rem"
-          borderRadius="5rem"
-          justifyContent="space-around"
-        >
-          <FaGithub size="1.5rem" />
-          GitHub
-        </Flex>
-        <Flex
-          bg="blue.600"
-          p="0.6rem"
-          borderRadius="5rem"
-          justifyContent="space-around"
-        >
-          <FaTwitter size="1.5rem" />
-          Twitter
-        </Flex>
-      </SimpleGrid>
-    </ChakraBox>
+    </Box>
   );
 };
 
