@@ -71,7 +71,6 @@ const About = () => {
           alt="ritvij_memoji"
           ml={{ md: "1rem" }}
           mt={{ base: "4rem", md: "0" }}
-          w={{ base: "90%", sm: "80%", md: "auto" }}
         />
       </ChakraBox>
     </Flex>
