@@ -3,6 +3,7 @@ import React from "react";
 import "@fontsource/jost/600.css";
 import "@fontsource/jost/400.css";
 import ChakraBox from "./animate_box";
+import CodeTypewriterHook from "./codeTypewriter";
 
 const Intro = () => {
   const { colorMode } = useColorMode();
@@ -10,7 +11,7 @@ const Intro = () => {
   return (
     <Box
       ml={{ base: "2rem", sm: "4rem", md: "6rem", lg: "8rem", xl: "12rem" }}
-      mt="8%"
+      mt="6%"
       mb="13%"
       w={{ base: "85%", sm: "75%", lg: "70%", xl: "60%" }}
     >
@@ -35,7 +36,6 @@ const Intro = () => {
       >
         Hello there! 👋🏽 I am Ritvij
       </ChakraBox>
-      <br />
       <ChakraBox
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -51,6 +51,7 @@ const Intro = () => {
         mt="2rem"
         color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
       >
+        <CodeTypewriterHook />
         Passionate Software Engineer with keen interest in developing mobile
         applications, full-stack web technologies and blockchain.
         <br /> <br />
