@@ -8,7 +8,12 @@ const Intro = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box ml="12rem" mt="8%" mb="13%" w="60%">
+    <Box
+      ml={{ base: "2rem", sm: "4rem", md: "6rem", lg: "8rem", xl: "12rem" }}
+      mt="8%"
+      mb="13%"
+      w={{ base: "85%", sm: "75%", lg: "70%", xl: "60%" }}
+    >
       <ChakraBox
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -19,7 +24,7 @@ const Intro = () => {
           ease: "easeIn",
         }}
         fontFamily="jost"
-        fontSize="6xl"
+        fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}
         fontWeight="600"
         color={colorMode == "dark" ? "#00AFFA" : "#041118"}
         textShadow={
@@ -41,7 +46,7 @@ const Intro = () => {
           ease: "easeIn",
         }}
         fontFamily="jost"
-        fontSize="2xl"
+        fontSize={{ base: "md", md: "xl", lg: "2xl" }}
         fontWeight="600"
         mt="2rem"
         color={colorMode == "dark" ? "#D2EAFF" : "#041118"}

@@ -21,14 +21,16 @@ const Footer = () => {
       }}
     >
       <Flex
-        direction="row"
+        direction={{ base: "column", sm: "row" }}
         w="100%"
         justify="space-between"
         alignItems="center"
-        px="12rem"
+        px={{ base: "2rem", sm: "4rem", md: "6rem", lg: "8rem", xl: "12rem" }}
         py="3rem"
         fontFamily="jost"
         fontWeight="500"
+        fontSize={{ base: "xs", sm: "sm" }}
+        textAlign={{ base: "center", sm: "left" }}
       >
         <Text color={colorMode == "dark" ? "#D2EAFF" : "#041118"}>
           Designed and developed by{" "}
@@ -58,7 +60,7 @@ const Footer = () => {
           </Link>
           .
         </Text>
-        <HStack spacing="1rem">
+        <HStack spacing="1rem" mt={{ base: "2rem", sm: "0" }}>
           <Link href="https://twitter.com/ritvij14_" isExternal>
             <IoLogoTwitter
               color={colorMode == "dark" ? "#D2EAFF" : "#041118"}

@@ -22,7 +22,7 @@ const Header = () => {
         w="100%"
         justify="space-between"
         alignItems="center"
-        px="4rem"
+        px={{ base: "1.5rem", sm: "4rem" }}
         py="2rem"
       >
         <Image
@@ -32,6 +32,7 @@ const Header = () => {
               : "/images/logo_black.svg"
           }
           alt="ritvij_memoji"
+          w={{ base: "15%", md: "auto" }}
         />
 
         <ColorModeToggle />
