@@ -25,6 +25,7 @@ const theme = extendTheme({
     "nav-logo": `'Source Code Pro', monospace`,
     jost: `'Jost', sans-serif`,
     poppins: `'Poppins', sans-serif`,
+    noto: `'Noto Sans Mono', monospace`,
   },
   styles,
 });

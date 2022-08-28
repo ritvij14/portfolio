@@ -13,13 +13,15 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/jost": "^4.5.11",
+    "@fontsource/noto-sans-mono": "^4.5.10",
     "@fontsource/poppins": "^4.5.8",
     "@fontsource/source-code-pro": "^4.5.10",
     "framer-motion": "^6",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "react-simple-typewriter": "^3.0.1"
   },
   "devDependencies": {
     "@types/node": "18.6.1",
