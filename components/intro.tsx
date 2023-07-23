@@ -52,17 +52,22 @@ const Intro = () => {
             I am Ritvij Sharma
           </Text>
           <Text
-            fontWeight="400"
+            fontWeight={{ base: "400", sm: "500" }}
             w="80%"
             mt="1rem"
-            fontSize="2xl"
+            fontSize={{ base: "lg", md: "2xl" }}
             color={colorMode === "dark" ? "#D2EAFF" : "black"}
+            mb={{ base: "2rem", md: "0" }}
           >
             Passionate Software Engineer with keen interest in developing mobile
             applications, full-stack web apps and blockchain.
             <br /> <br />
             Currently building for Creators and Marketing Agencies at{" "}
-            <Link color="#5FC7F3" href="https://crowdpad.io" isExternal>
+            <Link
+              color={colorMode === "dark" ? "#5FC7F3" : "#00AFFA"}
+              href="https://crowdpad.io"
+              isExternal
+            >
               CrowdPad
             </Link>
             .

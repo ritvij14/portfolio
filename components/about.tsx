@@ -43,7 +43,7 @@ const About = () => {
         borderLeftWidth={6}
         borderLeftRadius={4}
         borderRightRadius={8}
-        paddingLeft={4}
+        paddingX={4}
         paddingY={4}
         color={colorMode === "dark" ? "#D2EAFF" : "black"}
         backgroundColor={colorMode === "dark" ? "#001D2D" : "#D2EAFF59"}
@@ -58,12 +58,20 @@ const About = () => {
         an NGO and also for research purposes, including one paper published out
         my college thesis project.
         <br /> Currently, I work as a Software Engineer at{" "}
-        <Link color="#5FC7F3" href="https://crowdpad.io" isExternal>
+        <Link
+          color={colorMode === "dark" ? "#5FC7F3" : "#00AFFA"}
+          href="https://crowdpad.io"
+          isExternal
+        >
           CrowdPad
         </Link>
         , while also working on side projects, freelance gigs and taking part in
         communities like{" "}
-        <Link color="#5FC7F3" href="https://superteam.fun/" isExternal>
+        <Link
+          color={colorMode === "dark" ? "#5FC7F3" : "#00AFFA"}
+          href="https://superteam.fun/"
+          isExternal
+        >
           SuperteamDAO
         </Link>
         .

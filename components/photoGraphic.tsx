@@ -16,7 +16,7 @@ const PhotoGraphic = () => {
         duration: 0.2,
         ease: "easeIn",
       }}
-      w={{ base: "50%", sm: "30%", "2xl": "25%" }}
+      w={{ base: "80%", md: "40%", lg: "35%", "2xl": "25%" }}
       h="fit-content"
       position="relative"
     >

@@ -82,7 +82,11 @@ const Experience = () => {
         }}
       >
         <Tabs orientation={isMobileFrame ? "horizontal" : "vertical"}>
-          <TabList w="25%" justifyContent={"space-evenly"}>
+          <TabList
+            overflowX="auto"
+            w={{ base: "100%", md: "25%" }}
+            justifyContent={{ md: "space-evenly" }}
+          >
             {companies.map((company) => (
               <Tab key={companies.indexOf(company)} justifyContent="start">
                 {company}
@@ -93,7 +97,13 @@ const Experience = () => {
           <TabPanels>
             {work.map((workPoints, index) => (
               <TabPanel key={index} paddingY={0}>
-                <Text fontFamily="jost" fontSize={"lg"} mb={2} fontWeight="600">
+                <Text
+                  mt={{ base: "1rem", sm: 0 }}
+                  fontFamily="jost"
+                  fontSize={"lg"}
+                  mb={2}
+                  fontWeight="600"
+                >
                   {workTime[index]}
                 </Text>
                 <UnorderedList>

@@ -48,7 +48,7 @@ const SocialsBar = () => {
             color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
-              color: "#5FC7F3",
+              color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
             }}
           >
             <GrMail size="16px" />
@@ -61,7 +61,7 @@ const SocialsBar = () => {
             color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
-              color: "#5FC7F3",
+              color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
             }}
           >
             <IoLogoTwitter size="16px" />
@@ -74,7 +74,7 @@ const SocialsBar = () => {
             color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
-              color: "#5FC7F3",
+              color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
             }}
           >
             <FaGithub size="16px" />
@@ -87,7 +87,7 @@ const SocialsBar = () => {
             color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
-              color: "#5FC7F3",
+              color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
             }}
           >
             <FaLinkedinIn size="16px" />
@@ -100,7 +100,7 @@ const SocialsBar = () => {
             color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
-              color: "#5FC7F3",
+              color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
             }}
           >
             <IoDocument size="16px" />
