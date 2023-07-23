@@ -1,4 +1,4 @@
-import { Box, Image, Stack, useColorMode } from "@chakra-ui/react";
+import { Box, color, Image, Stack, useColorMode } from "@chakra-ui/react";
 import React from "react";
 import ChakraBox from "./animate_box";
 
@@ -22,10 +22,15 @@ const PhotoGraphic = () => {
     >
       <Box h="full" w="full" role="group">
         <Image
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
           zIndex={2}
+          borderRadius={16}
           visibility={{ base: "hidden", xl: "visible" }}
           src={
-            colorMode == "dark" ? "/images/backend.svg" : "/images/backend.svg"
+            colorMode == "dark"
+              ? "/images/backend.svg"
+              : "/images/backend_white.svg"
           }
           alt="backend"
           position={"absolute"}
@@ -40,9 +45,16 @@ const PhotoGraphic = () => {
           }}
         />
         <Image
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
           zIndex={2}
+          borderRadius={16}
           visibility={{ base: "hidden", xl: "visible" }}
-          src={colorMode == "dark" ? "/images/blockchain.svg" : ""}
+          src={
+            colorMode == "dark"
+              ? "/images/blockchain.svg"
+              : "/images/blockchain_white.svg"
+          }
           alt="backend"
           position={"absolute"}
           top={"-1.5rem"}
@@ -56,9 +68,16 @@ const PhotoGraphic = () => {
           }}
         />
         <Image
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
           zIndex={2}
+          borderRadius={16}
           visibility={{ base: "hidden", xl: "visible" }}
-          src={colorMode == "dark" ? "/images/databases.svg" : ""}
+          src={
+            colorMode == "dark"
+              ? "/images/databases.svg"
+              : "/images/db_white.svg"
+          }
           alt="backend"
           position={"absolute"}
           top={"30%"}
@@ -72,9 +91,16 @@ const PhotoGraphic = () => {
           }}
         />
         <Image
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
           zIndex={2}
+          borderRadius={16}
           visibility={{ base: "hidden", xl: "visible" }}
-          src={colorMode == "dark" ? "/images/flutter_vector.svg" : ""}
+          src={
+            colorMode == "dark"
+              ? "/images/flutter_vector.svg"
+              : "/images/flutter_white.svg"
+          }
           alt="backend"
           position={"absolute"}
           bottom={"0"}
@@ -88,9 +114,16 @@ const PhotoGraphic = () => {
           }}
         />
         <Image
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
           zIndex={2}
+          borderRadius={16}
           visibility={{ base: "hidden", xl: "visible" }}
-          src={colorMode == "dark" ? "/images/gcloud_vector.svg" : ""}
+          src={
+            colorMode == "dark"
+              ? "/images/gcloud_vector.svg"
+              : "/images/gcloud_white.svg"
+          }
           alt="backend"
           position={"absolute"}
           top={"-2rem"}
@@ -104,9 +137,16 @@ const PhotoGraphic = () => {
           }}
         />
         <Image
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
           zIndex={2}
+          borderRadius={16}
           visibility={{ base: "hidden", xl: "visible" }}
-          src={colorMode == "dark" ? "/images/js_vector.svg" : ""}
+          src={
+            colorMode == "dark"
+              ? "/images/js_vector.svg"
+              : "/images/js_white.svg"
+          }
           alt="backend"
           position={"absolute"}
           top={"1rem"}
@@ -120,9 +160,16 @@ const PhotoGraphic = () => {
           }}
         />
         <Image
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
           zIndex={2}
+          borderRadius={16}
           visibility={{ base: "hidden", xl: "visible" }}
-          src={colorMode == "dark" ? "/images/mobile_apps.svg" : ""}
+          src={
+            colorMode == "dark"
+              ? "/images/mobile_apps.svg"
+              : "/images/mobile_white.svg"
+          }
           alt="backend"
           position={"absolute"}
           top={"-3rem"}
@@ -136,9 +183,16 @@ const PhotoGraphic = () => {
           }}
         />
         <Image
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
           zIndex={2}
+          borderRadius={16}
           visibility={{ base: "hidden", xl: "visible" }}
-          src={colorMode == "dark" ? "/images/solana_vector.svg" : ""}
+          src={
+            colorMode == "dark"
+              ? "/images/solana_vector.svg"
+              : "/images/solana_white.svg"
+          }
           alt="backend"
           position={"absolute"}
           bottom={"1.5rem"}
@@ -152,10 +206,17 @@ const PhotoGraphic = () => {
           }}
         />
         <Image
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
           zIndex={2}
           visibility={{ base: "hidden", xl: "visible" }}
-          src={colorMode == "dark" ? "/images/websites.svg" : ""}
+          src={
+            colorMode == "dark"
+              ? "/images/websites.svg"
+              : "/images/websites_white.svg"
+          }
           alt="backend"
+          borderRadius={16}
           position={"absolute"}
           left={"-5rem"}
           top={"45%"}
@@ -169,7 +230,8 @@ const PhotoGraphic = () => {
         />
         <Box
           borderRadius={1000}
-          backgroundColor={"#94CCE4"}
+          border={`${colorMode === "light" ? "1px solid #CFCFCF" : "none"}`}
+          backgroundColor={`${colorMode == "dark" && "#94CCE4"}`}
           style={{
             transition: "all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)",
           }}
@@ -183,6 +245,7 @@ const PhotoGraphic = () => {
             backgroundColor: "white",
           }}
           position="relative"
+          shadow={"0px 40px 30px 0px rgba(25, 25, 46, 0.10)"}
         >
           <Image
             mixBlendMode={"multiply"}
@@ -190,7 +253,9 @@ const PhotoGraphic = () => {
               mixBlendMode: "none",
               filter: "none",
             }}
-            filter={"grayscale(100%) contrast(1)"}
+            filter={
+              colorMode === "dark" ? "grayscale(100%) contrast(1)" : "none"
+            }
             position="relative"
             borderRadius={1000}
             src={"/images/IMG_4117.jpg"}

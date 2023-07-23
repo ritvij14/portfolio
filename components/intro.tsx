@@ -3,15 +3,18 @@ import React from "react";
 import "@fontsource/jost/600.css";
 import "@fontsource/jost/400.css";
 import ChakraBox from "./animate_box";
-import CodeTypewriterHook from "./codeTypewriter";
 import PhotoGraphic from "./photoGraphic";
 
 const Intro = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box w="full" mt={"10%"}>
-      <Flex flexDir={{ base: "column", md: "row" }}>
+    <Box w="full" mt={"13%"}>
+      <Flex
+        flexDir={{ base: "column", md: "row" }}
+        justifyContent="center"
+        alignItems={"center"}
+      >
         <ChakraBox
           flex={1}
           initial={{ opacity: 0, y: 10 }}
@@ -26,7 +29,7 @@ const Intro = () => {
         >
           <Text
             fontWeight="400"
-            fontSize={{ base: "md", sm: "lg", md: "xl", lg: "2xl" }}
+            fontSize={{ base: "lg", sm: "xl", md: "2xl", lg: "3xl" }}
             color={colorMode == "dark" ? "#00AFFA" : "#041118"}
             textShadow={
               colorMode == "dark"
@@ -38,7 +41,7 @@ const Intro = () => {
           </Text>
           <Text
             fontWeight="600"
-            fontSize={{ base: "xl", sm: "2xl", md: "3xl" }}
+            fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
             color={colorMode == "dark" ? "#00AFFA" : "#041118"}
             textShadow={
               colorMode == "dark"
@@ -48,7 +51,13 @@ const Intro = () => {
           >
             I am Ritvij Sharma
           </Text>
-          <Text fontWeight="500" w="80%" mt="1rem" fontSize="xl">
+          <Text
+            fontWeight="400"
+            w="80%"
+            mt="1rem"
+            fontSize="2xl"
+            color={colorMode === "dark" ? "#D2EAFF" : "black"}
+          >
             Passionate Software Engineer with keen interest in developing mobile
             applications, full-stack web apps and blockchain.
             <br /> <br />

@@ -6,6 +6,7 @@ import Experience from "../components/experience";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Intro from "../components/intro";
+import SocialsBar from "../components/socialsBar";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
+      <SocialsBar />
       <Box w={{ "2xl": "50vw", base: "65vw" }} mx="auto">
         <Intro />
         <About />

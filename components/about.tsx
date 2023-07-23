@@ -6,6 +6,8 @@ import "@fontsource/jost/600.css";
 import "@fontsource/jost/700.css";
 
 const About = () => {
+  const { colorMode } = useColorMode();
+
   return (
     <ChakraBox
       initial={{ opacity: 0, y: 10 }}
@@ -17,7 +19,7 @@ const About = () => {
         duration: 0.2,
         ease: "easeIn",
       }}
-      mt={"10%"}
+      mt={"17%"}
     >
       <Text
         mt="auto"
@@ -43,7 +45,8 @@ const About = () => {
         borderRightRadius={8}
         paddingLeft={4}
         paddingY={4}
-        backgroundColor={"#001D2D"}
+        color={colorMode === "dark" ? "#D2EAFF" : "black"}
+        backgroundColor={colorMode === "dark" ? "#001D2D" : "#D2EAFF59"}
       >
         My coding journey began way back in high-school when I was introduced to
         Java programming language. Since then its been an amazing experience

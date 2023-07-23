@@ -45,7 +45,7 @@ const Experience = () => {
 
   return (
     <Box
-      mt="4rem"
+      mt={"17%"}
       mb="5rem"
       color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
     >
