@@ -4,6 +4,7 @@ import ChakraBox from "./animate_box";
 import "@fontsource/jost/500.css";
 import { IoLogoTwitter } from "react-icons/io5";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
 
 const Footer = () => {
   const { colorMode } = useColorMode();
@@ -34,7 +35,11 @@ const Footer = () => {
       >
         <Text color={colorMode == "dark" ? "#D2EAFF" : "#041118"}>
           Designed and developed by{" "}
-          <Link color="#00AFFA" href="mailto://ritvij2001@gmail.com" isExternal>
+          <Link
+            color="#00AFFA"
+            href="https://github.com/ritvij14/portfolio"
+            isExternal
+          >
             Ritvij Kumar Sharma.
           </Link>
           <br />
@@ -61,6 +66,12 @@ const Footer = () => {
           .
         </Text>
         <HStack spacing="1rem" mt={{ base: "2rem", sm: "0" }}>
+          <Link href="mailto://ritvij2001@gmail.com" isExternal>
+            <GrMail
+              color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
+              size="24px"
+            />
+          </Link>
           <Link href="https://twitter.com/ritvij14_" isExternal>
             <IoLogoTwitter
               color={colorMode == "dark" ? "#D2EAFF" : "#041118"}

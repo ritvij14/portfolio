@@ -19,7 +19,7 @@ const CodeTypewriterHook = () => {
   });
 
   return (
-    <Box fontFamily="noto" fontSize={{ base: "sm", md: "lg", lg: "xl" }}>
+    <Box fontFamily="noto" mt="1.5rem" fontSize={{ base: "md" }}>
       <Box>
         <Text as="span">{"<"}</Text>
         <Text as="span" color="#00AFFA">
