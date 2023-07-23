@@ -84,6 +84,7 @@ const Experience = () => {
         <Tabs orientation={isMobileFrame ? "horizontal" : "vertical"}>
           <TabList
             overflowX="auto"
+            overflowY="hidden"
             w={{ base: "100%", md: "25%" }}
             justifyContent={{ md: "space-evenly" }}
           >

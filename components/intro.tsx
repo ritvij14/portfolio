@@ -53,7 +53,7 @@ const Intro = () => {
           </Text>
           <Text
             fontWeight={{ base: "400", sm: "500" }}
-            w="80%"
+            w={{ base: "100%", md: "80%" }}
             mt="1rem"
             fontSize={{ base: "lg", md: "2xl" }}
             color={colorMode === "dark" ? "#D2EAFF" : "black"}
