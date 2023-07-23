@@ -39,7 +39,7 @@ const About = () => {
         fontSize={{ base: "sm", md: "md", lg: "lg" }}
         fontWeight="400"
         mt="1rem"
-        borderLeftColor={"#00AFFA"}
+        borderLeftColor={"#5FC7F3"}
         borderLeftWidth={6}
         borderLeftRadius={4}
         borderRightRadius={8}
@@ -58,12 +58,12 @@ const About = () => {
         an NGO and also for research purposes, including one paper published out
         my college thesis project.
         <br /> Currently, I work as a Software Engineer at{" "}
-        <Link color="#00AFFA" href="https://crowdpad.io" isExternal>
+        <Link color="#5FC7F3" href="https://crowdpad.io" isExternal>
           CrowdPad
         </Link>
         , while also working on side projects, freelance gigs and taking part in
         communities like{" "}
-        <Link color="#00AFFA" href="https://superteam.fun/" isExternal>
+        <Link color="#5FC7F3" href="https://superteam.fun/" isExternal>
           SuperteamDAO
         </Link>
         .

@@ -11,7 +11,7 @@ const styles: Styles = {
     body: {
       bg: mode(
         "white",
-        "linear-gradient(342.55deg, #041118 58.12%, #092331 88.45%);"
+        "linear-gradient(134deg, #1C2A34 0%, #111A20 100%, #111A20 100%);"
       )(props),
       fontFamily: mode(`'Jost', sans-serif`, `'Jost', sans-serif`)(props),
       overflow: "scroll",

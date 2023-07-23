@@ -30,7 +30,7 @@ const Intro = () => {
           <Text
             fontWeight="400"
             fontSize={{ base: "lg", sm: "xl", md: "2xl", lg: "3xl" }}
-            color={colorMode == "dark" ? "#00AFFA" : "#041118"}
+            color={colorMode == "dark" ? "#5FC7F3" : "#041118"}
             textShadow={
               colorMode == "dark"
                 ? "0px 0px 76px rgba(188, 251, 195, 0.3)"
@@ -42,7 +42,7 @@ const Intro = () => {
           <Text
             fontWeight="600"
             fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
-            color={colorMode == "dark" ? "#00AFFA" : "#041118"}
+            color={colorMode == "dark" ? "#5FC7F3" : "#041118"}
             textShadow={
               colorMode == "dark"
                 ? "0px 0px 76px rgba(188, 251, 195, 0.3)"
@@ -62,7 +62,7 @@ const Intro = () => {
             applications, full-stack web apps and blockchain.
             <br /> <br />
             Currently building for Creators and Marketing Agencies at{" "}
-            <Link color="#00AFFA" href="https://crowdpad.io" isExternal>
+            <Link color="#5FC7F3" href="https://crowdpad.io" isExternal>
               CrowdPad
             </Link>
             .

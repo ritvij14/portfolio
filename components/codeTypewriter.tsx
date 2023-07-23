@@ -22,7 +22,7 @@ const CodeTypewriterHook = () => {
     <Box fontFamily="noto" mt="1.5rem" fontSize={{ base: "md" }}>
       <Box>
         <Text as="span">{"<"}</Text>
-        <Text as="span" color="#00AFFA">
+        <Text as="span" color="#5FC7F3">
           code
         </Text>
         <Text as="span">{">"}</Text>
@@ -32,7 +32,7 @@ const CodeTypewriterHook = () => {
       <Cursor />
       <Box>
         <Text as="span">{"</"}</Text>
-        <Text as="span" color="#00AFFA">
+        <Text as="span" color="#5FC7F3">
           code
         </Text>
         <Text as="span">{">"}</Text>
@@ -48,7 +48,7 @@ const Cursor = ({ cursorStyle = "_" }: CursorProps): JSX.Element => {
       as="span"
       pos="relative"
       fontFamily="inherit"
-      color="#00AFFA"
+      color="#5FC7F3"
       lineHeight="inherit"
       left="3px"
       top="0"

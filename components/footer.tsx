@@ -26,7 +26,7 @@ const Footer = () => {
       >
         Designed and developed by{" "}
         <Link
-          color="#00AFFA"
+          color="#5FC7F3"
           href="https://github.com/ritvij14/portfolio"
           isExternal
         >
@@ -34,19 +34,19 @@ const Footer = () => {
         </Link>
         <br />
         Built using{" "}
-        <Link color="#00AFFA" href="https://nextjs.org" isExternal>
+        <Link color="#5FC7F3" href="https://nextjs.org" isExternal>
           NextJS
         </Link>
         ,{" "}
-        <Link color="#00AFFA" href="https://chakra-ui.com/" isExternal>
+        <Link color="#5FC7F3" href="https://chakra-ui.com/" isExternal>
           Chakra UI
         </Link>{" "}
         and{" "}
-        <Link color="#00AFFA" href="https://www.typescriptlang.org/" isExternal>
+        <Link color="#5FC7F3" href="https://www.typescriptlang.org/" isExternal>
           Typescript
         </Link>
         . Deployed using{" "}
-        <Link color="#00AFFA" href="https://vercel.com/" isExternal>
+        <Link color="#5FC7F3" href="https://vercel.com/" isExternal>
           Vercel
         </Link>
         .
