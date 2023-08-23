@@ -25,6 +25,7 @@ const About = () => {
         mt="auto"
         fontFamily="jost"
         fontSize={{ base: "2xl", lg: "3xl", xl: "4xl" }}
+        color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
         fontWeight="700"
         _after={{
           borderTopColor: "white",
@@ -45,7 +46,7 @@ const About = () => {
         borderRightRadius={8}
         paddingX={4}
         paddingY={4}
-        color={colorMode === "dark" ? "#D2EAFF" : "black"}
+        color={colorMode === "dark" ? "#F2EAFF" : "black"}
         backgroundColor={colorMode === "dark" ? "#001D2D" : "#D2EAFF59"}
       >
         My coding journey began way back in high-school when I was introduced to

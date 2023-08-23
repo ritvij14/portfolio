@@ -44,11 +44,7 @@ const Experience = () => {
   ];
 
   return (
-    <Box
-      mt={"17%"}
-      mb="5rem"
-      color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
-    >
+    <Box mt={"17%"} mb="5rem">
       <ChakraBox
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -66,6 +62,7 @@ const Experience = () => {
           fontFamily="jost"
           fontSize={{ base: "2xl", lg: "3xl", xl: "4xl" }}
           fontWeight="700"
+          color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
         >
           Work Experience
         </Text>
@@ -87,6 +84,7 @@ const Experience = () => {
             overflowY="hidden"
             w={{ base: "100%", md: "25%" }}
             justifyContent={{ md: "space-evenly" }}
+            color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
           >
             {companies.map((company) => (
               <Tab key={companies.indexOf(company)} justifyContent="start">
@@ -104,6 +102,7 @@ const Experience = () => {
                   fontSize={"lg"}
                   mb={2}
                   fontWeight="600"
+                  color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
                 >
                   {workTime[index]}
                 </Text>

@@ -56,7 +56,7 @@ const Intro = () => {
             w={{ base: "100%", md: "80%" }}
             mt="1rem"
             fontSize={{ base: "lg", md: "2xl" }}
-            color={colorMode === "dark" ? "#D2EAFF" : "black"}
+            color={colorMode === "dark" ? "#F2EAFF" : "black"}
             mb={{ base: "2rem", md: "0" }}
           >
             Passionate Software Engineer with keen interest in developing mobile

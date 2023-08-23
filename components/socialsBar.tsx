@@ -36,7 +36,7 @@ const SocialsBar = () => {
           width: "2px",
           borderRadius: 5,
           mt: 6,
-          background: colorMode == "dark" ? "#D2EAFF" : "#041118",
+          background: colorMode == "dark" ? "#F2EAFF" : "#041118",
         }}
         spacing="2rem"
         mt={{ base: "2rem", sm: "0" }}
@@ -45,7 +45,7 @@ const SocialsBar = () => {
           <Link
             href="mailto:ritvij2001@gmail.com"
             isExternal
-            color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
+            color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
               color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
@@ -58,7 +58,7 @@ const SocialsBar = () => {
           <Link
             href="https://twitter.com/ritvij14_"
             isExternal
-            color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
+            color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
               color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
@@ -71,7 +71,7 @@ const SocialsBar = () => {
           <Link
             href="https://github.com/ritvij14"
             isExternal
-            color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
+            color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
               color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
@@ -84,7 +84,7 @@ const SocialsBar = () => {
           <Link
             href="https://www.linkedin.com/in/rks-1410"
             isExternal
-            color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
+            color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
               color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
@@ -97,7 +97,7 @@ const SocialsBar = () => {
           <Link
             href="https://drive.google.com/file/d/1lK3I6pqOAmrLJquBx_0EuZsjdGodngfm/view?usp=sharing"
             isExternal
-            color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
+            color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
             _hover={{
               transform: "scale(1.25)",
               color: colorMode === "dark" ? "#5FC7F3" : "#00AFFA",
