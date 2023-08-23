@@ -10,7 +10,7 @@ const styles: Styles = {
   global: (props) => ({
     body: {
       bg: mode(
-        "white",
+        "#F2F8F8",
         "linear-gradient(134deg, #1C2A34 0%, #111A20 100%, #111A20 100%);"
       )(props),
       fontFamily: mode(`'Jost', sans-serif`, `'Jost', sans-serif`)(props),

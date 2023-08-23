@@ -55,8 +55,8 @@ const About = () => {
         <br />
         <br />
         Fast forward to today, I have worked on several projects, for startups,
-        an NGO and also for research purposes, including one paper published out
-        my college thesis project.
+        an NGO and also for research purposes, including one paper published
+        from my college thesis project.
         <br /> Currently, I work as a Software Engineer at{" "}
         <Link
           color={colorMode === "dark" ? "#5FC7F3" : "#00AFFA"}

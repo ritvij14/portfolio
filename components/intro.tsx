@@ -16,7 +16,7 @@ const Intro = () => {
         alignItems={"center"}
       >
         <ChakraBox
-          flex={1}
+          flex={2}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           // @ts-ignore no problem in operation, although type error appears.

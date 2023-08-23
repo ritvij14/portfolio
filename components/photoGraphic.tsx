@@ -18,6 +18,7 @@ const PhotoGraphic = () => {
       }}
       w={{ base: "80%", md: "40%", lg: "35%", "2xl": "25%" }}
       h="fit-content"
+      flex={1}
       position="relative"
     >
       <Box h="full" w="full" role="group">
@@ -258,7 +259,7 @@ const PhotoGraphic = () => {
             }
             position="relative"
             borderRadius={1000}
-            src={"/images/IMG_4117.jpg"}
+            src={"/images/IMG_6208.png"}
             alt="profile_pic"
           />
         </Box>
