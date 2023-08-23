@@ -22,7 +22,7 @@ const Footer = () => {
     >
       <Text
         textAlign={"center"}
-        color={colorMode == "dark" ? "#D2EAFF" : "#041118"}
+        color={colorMode == "dark" ? "#F2EAFF" : "#041118"}
       >
         Designed and developed by{" "}
         <Link
