@@ -1,7 +1,6 @@
 import { Link, Text, useColorMode } from "@chakra-ui/react";
-import React from "react";
-import ChakraBox from "./animate_box";
 import "@fontsource/jost/500.css";
+import ChakraBox from "./animate_box";
 
 const Footer = () => {
   const { colorMode } = useColorMode();

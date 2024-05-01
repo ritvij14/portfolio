@@ -1,24 +1,22 @@
 import {
   Box,
-  Flex,
-  Text,
-  useColorMode,
+  ListItem,
   Tab,
-  Tabs,
+  TabList,
   TabPanel,
   TabPanels,
-  TabList,
-  useMediaQuery,
+  Tabs,
+  Text,
   UnorderedList,
-  ListItem,
+  useColorMode,
+  useMediaQuery,
 } from "@chakra-ui/react";
-import React from "react";
 import ChakraBox from "./animate_box";
 
 const Experience = () => {
   const { colorMode } = useColorMode();
   const [isMobileFrame] = useMediaQuery("(max-width: 480px)");
-  const companies = ["CrowdPad", "Huddle01", "AgNext Tech", "Lifespark Tech"];
+  const companies = ["Kendal AI", "Huddle01", "AgNext Tech", "Lifespark Tech"];
   const workTime = [
     "May 2022 - Present",
     "July 2021 - April 2022",
@@ -27,7 +25,7 @@ const Experience = () => {
   ];
   const work = [
     [
-      "Post-Pivot: Working on end-to-end development of Creator Discovery webapp, and all related backend functionality",
+      "Post-Pivot: Worked on development of multiple web-apps. Currently building a full CRM solution for Real Estate Agents in the UAE region.",
       "Pre-Pivot: Worked on mobile app for web3 social media application allowing users to invest in their favourite creators and creators to create their own crypto tokens. Built end-to-end Flutter Application with blockchain features based on Solana.",
     ],
     [
