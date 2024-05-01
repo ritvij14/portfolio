@@ -1,9 +1,8 @@
-import React from "react";
 import { Link, Text, useColorMode } from "@chakra-ui/react";
 
-import ChakraBox from "./animate_box";
 import "@fontsource/jost/600.css";
 import "@fontsource/jost/700.css";
+import ChakraBox from "./animate_box";
 
 const About = () => {
   const { colorMode } = useColorMode();
@@ -61,10 +60,10 @@ const About = () => {
         <br /> Currently, I work as a Software Engineer at{" "}
         <Link
           color={colorMode === "dark" ? "#5FC7F3" : "#00AFFA"}
-          href="https://crowdpad.io"
+          href="https://kendal.ai"
           isExternal
         >
-          CrowdPad
+          Kendal AI
         </Link>
         , while also working on side projects, freelance gigs and taking part in
         communities like{" "}
