@@ -1,7 +1,6 @@
 import { Box, Flex, Link, Text, useColorMode } from "@chakra-ui/react";
-import React from "react";
-import "@fontsource/jost/600.css";
 import "@fontsource/jost/400.css";
+import "@fontsource/jost/600.css";
 import ChakraBox from "./animate_box";
 import PhotoGraphic from "./photoGraphic";
 
@@ -62,13 +61,13 @@ const Intro = () => {
             Passionate Software Engineer with keen interest in developing mobile
             applications, full-stack web apps and blockchain.
             <br /> <br />
-            Currently building for Creators and Marketing Agencies at{" "}
+            Currently building for Real Estate Agents and Brokerages at{" "}
             <Link
               color={colorMode === "dark" ? "#5FC7F3" : "#00AFFA"}
-              href="https://crowdpad.io"
+              href="https://kendal.ai"
               isExternal
             >
-              CrowdPad
+              Kendal AI
             </Link>
             .
           </Text>
